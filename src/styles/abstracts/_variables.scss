@@ -12,9 +12,9 @@ $RoseBud: #f5a691;
 $white: #fff;
 $lemon: #f9ca24;
 
-$gr: linear-gradient(120deg, $abbey 0%, $dark 100%);
-$gr2: linear-gradient(120deg, $accent 0%, lighten($accent, 10) 100%);
-$gr3: linear-gradient(45deg, $brightRed 0%, $lemon 100%);
+// $gr: linear-gradient(120deg, $abbey 0%, $dark 100%);
+// $gr2: linear-gradient(120deg, $accent 0%, lighten($accent, 10) 100%);
+// $gr3: linear-gradient(45deg, $brightRed 0%, $lemon 100%);
 
 // Light mode
 body {
@@ -35,7 +35,7 @@ body {
 }
 
 // Dark mode
-body.dark {
+body.dark-theme {
   --text: #fff;
   --text--v2: #797d82;
 
