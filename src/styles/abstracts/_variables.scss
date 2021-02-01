@@ -1,3 +1,58 @@
-$color__dominant: #0d253f;
-$color__accent: #01b4e4;
-$color__complement: #90cea1;
+$img: 'https://sun9-2.userapi.com/c830709/v830709453/17f58c/vPCov8kW6Ns.jpg';
+$gray: #6a6a6a;
+$g2: #84878a;
+$black: #050606;
+$dark: #18191d;
+$abbey: #47494b;
+$brightRed: #d11302;
+$dRed: #a30d02;
+$RedOxide: #5d0f04;
+$accent: #e8550c;
+$RoseBud: #f5a691;
+$white: #fff;
+$lemon: #f9ca24;
+
+$gr: linear-gradient(120deg, $abbey 0%, $dark 100%);
+$gr2: linear-gradient(120deg, $accent 0%, lighten($accent, 10) 100%);
+$gr3: linear-gradient(45deg, $brightRed 0%, $lemon 100%);
+
+// Light mode
+body {
+  --text: #31456a;
+  --text--v2: #31456a99;
+  --bg: linear-gradient(318.32deg, #c3d1e4 0%, #dde7f3 55%, #d4e0ed 100%);
+  --light-shadow: #fff;
+  --light-shadow--v2: #fff;
+
+  --dark-shadow: #88a5bf7a;
+  --dark-shadow--v2: #88a5bf7a;
+
+  $gr: linear-gradient(120deg, #47494b 0%, --dark-shadow--v2 100%);
+  //   $gr2: linear-gradient(120deg, $accent 0%, lighten($accent, 10) 100%);
+  //   $gr3: linear-gradient(45deg, $brightRed 0%, $lemon 100%);
+
+  background: var(--bg);
+}
+
+// Dark mode
+body.dark {
+  --text: #fff;
+  --text--v2: #797d82;
+
+  --bg: #26282b;
+  --light-shadow: #444444;
+  --light-shadow--v2: #6a6a6a;
+
+  --dark-shadow: #050606;
+  --dark-shadow--v2: #18191d;
+
+  $gr: linear-gradient(120deg, #47494b 0%, --dark-shadow--v2 100%);
+  //   $gr2: linear-gradient(120deg, $accent 0%, lighten($accent, 10) 100%);
+  //   $gr3: linear-gradient(45deg, $brightRed 0%, $lemon 100%);
+
+  background: var(--bg);
+}
+
+.test {
+  //   background-color: ;
+}

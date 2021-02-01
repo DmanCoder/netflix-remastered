@@ -11,6 +11,9 @@ import App from './App';
 // Other
 import reportWebVitals from './reportWebVitals';
 
+// Styles
+import './styles/main.scss';
+
 ReactDOM.render(
   <Provider store={store}>
     <App />
