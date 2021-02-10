@@ -1,46 +1,96 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<!-- https://www.makeareadme.com/ -->
 
-In the project directory, you can run:
+# Naming Conventions
 
-### `npm start`
+## Redux
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Redux action files suffix with the word `Action` e.g. -> `authActions`
+- Redux action functions suffix with `AXN` (`Action` abbreviated) e.g. -> `loginUserAXN`
+- Redux reducer files suffix with the word `Reducer` e.g. -> `authReducer`
+- Redux state suffix with `RXS` e.g. -> `authRXS`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## State Hooks
 
-### `npm test`
+- State Hooks suffix with `STH` e.g. `dataSourceSTH`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Utilities
 
-### `npm run build`
+- Utility files are suffixed with `UTL` e.g. `loggerUTL`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Validations
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Validations files are suffixed with `VAL` e.g. `loginVAL`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Assets
 
-### `npm run eject`
+- All assets (e.g. images and logos etc) suffix with the corresponding file extension e.g. `logoSVG`, `logoPNG`, `logoJPG`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# BEM Methodology
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Block: A functionally independent page component that can be reused. In HTML, blocks are represented by the class attribute.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Element: A composite part of a block that can`t be used separately from it.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Modifier: An entity that defines the appearance, state, or behavior of a block or element.
 
-## Learn More
+# Mobile First Aproach
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Always begin designing and developing with the mobile first approach in mind!
+- Always begin designing and developing with the mobile first approach in mind!!
+- Always begin designing and developing with the mobile first approach in mind!!!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Installation
+
+`npm i`
+
+# Usage
+
+`npm start`
+
+# Contributing / Testing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Please make sure to update tests as appropriate.
+
+Testing tools include:
+
+- Jest
+- Enzyme
+- Cypress
+
+When targeting UI please use custom attributes e.g `data-test="my-target"`
+
+Do not target using classes, id, selectors etc... for obvious reasons
+
+Attributes are automatically ignored if their value is `undefined`, which we can use to our advantage!
+
+# Support
+
+You can hit up any of the developers for help through the slack channel
+
+or via email 😎. We are here to help :D.
+
+# Roadmap
+
+If you have ideas for releases in the future, it is a good idea to list them in the README.
+
+- (IDEA)
+- (IDEA)
+- (IDEA)
+- (IDEA)
+- (IDEA)
+
+# Authors and acknowledgment
+
+- Denis Otim (DmanCoder) AKA - What a legend
+- Joel Bailey (iBailz17) AKA - What a beast
+
+# License
+
+For open source projects, say how it is licensed.
+
+# Project status
+
+If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
