@@ -1,12 +1,14 @@
 import { combineReducers } from 'redux';
 
 // REDUCERS
+import loadingReducer from '../reducers/loading/loading';
 import movieReducer from '../reducers/movies/movies';
 
 // ACTIONS
 import { LOGOUT_USER } from '../actions/types';
 
 const rootReducer = combineReducers({
+  loadingRXS: loadingReducer,
   movieRXS: movieReducer,
 });
 
