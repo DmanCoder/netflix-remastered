@@ -1,16 +1,14 @@
 import React, { useEffect } from 'react';
 
-// Init
-import { dbAPI, REACT_APP_TMBD_KEY } from './api/init';
+import { getUpComingMoviesAXN } from './redux/actions/movies/moviesActions';
 
-interface IAppProps {}
+interface IAppProps {
+  // getUpComingMoviesAXN: 
+}
 
 const App: React.FC<IAppProps> = ({}) => {
   useEffect(() => {
-    console.log(REACT_APP_TMBD_KEY);
-    dbAPI.get(`/discover/movie?api_key=${REACT_APP_TMBD_KEY}`).then((res) => {
-      console.log(res);
-    });
+    // getUpComingMoviesAXN();
   }, []);
 
   return <div></div>;
