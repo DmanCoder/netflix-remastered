@@ -2,6 +2,8 @@ import { Dispatch } from 'redux';
 
 // Init
 import { dbAPI, REACT_APP_TMBD_KEY } from '../../../api/init';
+
+// Actions
 import { loadingToggleAXN } from '../loading/loadingActions';
 
 // ACTION TYPES
@@ -13,10 +15,11 @@ export const getUpComingMoviesAXN = () => (
 ) => {
   // Loading true
   loadingToggleAXN(true);
-  // Get movies
+      
+  // Endpoint
   const endPoint: string = `/movie/upcoming?api_key=${REACT_APP_TMBD_KEY}&language=en-US&page=1`;
 
-  // Api call
+  // Api call - Get upcoming movies
   dbAPI.get(endPoint).then((res) => {
     console.log(res);
   });

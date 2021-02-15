@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 
-import { getUpComingMoviesAXN } from './redux/actions/movies/moviesActions';
+// import { getUpComingMoviesAXN } from './redux/actions/movies/moviesActions';
 
 interface IAppProps {
-  // getUpComingMoviesAXN: 
+  // getUpComingMoviesAXN:
 }
 
 const App: React.FC<IAppProps> = ({}) => {
