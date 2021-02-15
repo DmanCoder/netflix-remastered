@@ -1,6 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Fragment } from 'react';
+
+// https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg
 
 // import { getUpComingMoviesAXN } from './redux/actions/movies/moviesActions';
+
+// Components
+import Banner from './components/banner/banner';
+
+// Assets
 
 interface IAppProps {
   // getUpComingMoviesAXN:
@@ -11,7 +18,11 @@ const App: React.FC<IAppProps> = ({}) => {
     // getUpComingMoviesAXN();
   }, []);
 
-  return <div></div>;
+  return (
+    <Fragment>
+      <Banner />
+    </Fragment>
+  );
 };
 
 export default App;

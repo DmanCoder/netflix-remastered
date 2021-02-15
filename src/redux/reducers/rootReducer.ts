@@ -4,11 +4,13 @@ import { combineReducers } from 'redux';
 import loadingReducer from '../reducers/loading/loading';
 import movieReducer from '../reducers/movies/movies';
 import errorsReducer from '../reducers/errors/errors';
+import languageReducer from '../reducers/language/language';
 
 const rootReducer = combineReducers({
   loadingRXS: loadingReducer,
   movieRXS: movieReducer,
   errorsRXS: errorsReducer,
+  languageRXS: languageReducer,
 });
 
 export default rootReducer;
