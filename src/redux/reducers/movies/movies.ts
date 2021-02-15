@@ -6,12 +6,12 @@ import {
 
 // Interfaces
 interface IDefaultState {
-  upComingMovies: [];
+  upComingMovies: {};
 }
 
 // Default State
 const defaultState: IDefaultState = {
-  upComingMovies: [],
+  upComingMovies: {},
 };
 
 // Movies Reducer TODO: Change the type of `action`
