@@ -5,7 +5,7 @@ import store from '../../store/store';
 import { dbAPI, REACT_APP_TMBD_KEY } from '../../../api/init';
 
 // Actions
-import allActions from '../allActions';
+// import allActions from '../allActions';
 import { ILoadingToggle } from '../loading/loadingActionsTypes';
 
 // ACTION TYPES
@@ -38,5 +38,8 @@ const getUpComingMoviesAXN = () => (
   });
 };
 
-// Export
-export default { getUpComingMoviesAXN };
+const moviesActions = {
+  getUpComingMoviesAXN,
+};
+
+export default moviesActions;

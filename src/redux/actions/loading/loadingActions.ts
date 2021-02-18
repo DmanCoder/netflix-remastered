@@ -12,4 +12,8 @@ const loadingToggleAXN = (isLoading: boolean) => (
     payload: isLoading,
   });
 
-export default { loadingToggleAXN };
+const loadingActions = {
+  loadingToggleAXN,
+};
+
+export default loadingActions;

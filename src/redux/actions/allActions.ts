@@ -10,9 +10,11 @@ import languageActions from './language/languageActions';
 // Movies actions
 import moviesActions from './movies/moviesActions';
 
-export default {
+const allActions = {
   loadingActions,
   errorsActions,
   languageActions,
   moviesActions,
 };
+
+export default allActions;

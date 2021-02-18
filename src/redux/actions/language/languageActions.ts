@@ -12,6 +12,8 @@ const setLanguageAXN = (language: string) => (
     payload: language,
   });
 
-export default {
+const languageActions = {
   setLanguageAXN,
 };
+
+export default languageActions;

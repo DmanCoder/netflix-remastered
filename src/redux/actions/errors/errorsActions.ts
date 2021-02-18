@@ -12,4 +12,8 @@ const errorsFeedbackAXN = (errors: {}) => (
     payload: errors,
   });
 
-export default { errorsFeedbackAXN };
+const errorsActions = {
+  errorsFeedbackAXN,
+};
+
+export default errorsActions;

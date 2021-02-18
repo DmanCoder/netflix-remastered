@@ -9,11 +9,9 @@ import Banner from './components/banner/banner';
 
 // Assets
 
-interface IAppProps {
-  // getUpComingMoviesAXN:
-}
+// interface IAppProps {}
 
-const App: React.FC<IAppProps> = ({}) => {
+const App: React.FC = () => {
   useEffect(() => {
     // getUpComingMoviesAXN();
   }, []);

@@ -6,16 +6,19 @@ import { RootStore } from '../../redux/store/store';
 // Redux actions
 import allActions from '../../redux/actions/allActions';
 
-interface IBannerProps {}
+// interface IBannerProps {}
 
-const Banner: React.FC<IBannerProps> = () => {
+const Banner: React.FC = () => {
   const dispatch = useDispatch();
   const { moviesActions } = allActions;
   const { moviesRXS } = useSelector((state: RootStore) => state);
+  console.log(moviesRXS);
 
   useEffect(() => {
     // Get up coming movies
     dispatch(moviesActions.getUpComingMoviesAXN());
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div>
