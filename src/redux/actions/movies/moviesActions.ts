@@ -5,7 +5,7 @@ import store from '../../store/store';
 import { dbAPI, REACT_APP_TMBD_KEY } from '../../../api/init';
 
 // Actions
-import { loadingToggleAXN } from '../loading/loadingActions';
+import allActions from '../allActions';
 import { ILoadingToggle } from '../loading/loadingActionsTypes';
 
 // ACTION TYPES
@@ -15,12 +15,13 @@ import {
 } from './moviesActionsTypes';
 
 // Get up coming movies (Coming Soon)
-export const getUpComingMoviesAXN = () => (
+const getUpComingMoviesAXN = () => (
   dispatch: Dispatch<IUpComingMoviesSuccess | ILoadingToggle>
 ) => {
   // Loading true
-  // dispatch(loadingToggleAXN(true))
+  // dispatch(allActions.loadingActions.loadingToggleAXN(true))
 
+  console.log('running....');
   // Get language
   const language: string = store.getState().languageRXS;
 
@@ -36,3 +37,6 @@ export const getUpComingMoviesAXN = () => (
     });
   });
 };
+
+// Export
+export default { getUpComingMoviesAXN };

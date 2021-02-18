@@ -1,14 +1,14 @@
 import { combineReducers } from 'redux';
 
 // REDUCERS
-import loadingReducer from '../reducers/loading/loading';
-import movieReducer from '../reducers/movies/movies';
-import errorsReducer from '../reducers/errors/errors';
-import languageReducer from '../reducers/language/language';
+import loadingReducer from './loading/loadingReducer';
+import moviesReducer from './movies/moviesReducer';
+import errorsReducer from './errors/errorsReducer';
+import languageReducer from './language/languageReducer';
 
 const rootReducer = combineReducers({
   loadingRXS: loadingReducer,
-  movieRXS: movieReducer,
+  moviesRXS: moviesReducer,
   errorsRXS: errorsReducer,
   languageRXS: languageReducer,
 });

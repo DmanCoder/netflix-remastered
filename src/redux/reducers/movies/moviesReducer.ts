@@ -12,7 +12,7 @@ interface IDefaultState {
 // Default State
 const defaultState: IDefaultState = {
   upComingMovies: {},
-};
+}; 
 
 // Movies Reducer TODO: Change the type of `action`
 const moviesReducer = (state = defaultState, action: MoviesDispatchTypes) => {

@@ -1,34 +1,27 @@
 import React, { useEffect } from 'react';
-import { connect } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootStore } from '../../redux/store/store';
+// import { connect } from 'react-redux';
 
 // Redux actions
-import { getUpComingMoviesAXN } from '../../redux/actions/movies/moviesActions';
+import allActions from '../../redux/actions/allActions';
 
-interface IBannerProps {
-  getUpComingMoviesAXN: Function;
-}
+interface IBannerProps {}
 
-interface IRootMapToStateProps {
-  loadingRXS: boolean;
-  moviesRXS: any;
-}
+const Banner: React.FC<IBannerProps> = () => {
+  const dispatch = useDispatch();
+  const { moviesActions } = allActions;
+  const { moviesRXS } = useSelector((state: RootStore) => state);
 
-const Banner: React.FC<IBannerProps> = ({ getUpComingMoviesAXN }) => {
   useEffect(() => {
-    getUpComingMoviesAXN();
+    // Get up coming movies
+    dispatch(moviesActions.getUpComingMoviesAXN());
   }, []);
   return (
     <div>
-      <h3>BANNER</h3>
+      <h3>testing</h3>
     </div>
   );
 };
 
-const mapStateToProps = (state: IRootMapToStateProps) => ({
-  moviesRXS: state.moviesRXS,
-  loadingRXS: state.loadingRXS,
-});
-
-export default connect(mapStateToProps, {
-  getUpComingMoviesAXN,
-})(Banner);
+export default Banner;
