@@ -12,7 +12,6 @@ const Banner: React.FC = () => {
   const dispatch = useDispatch();
   const { moviesActions } = allActions;
   const { moviesRXS } = useSelector((state: RootStore) => state);
-  console.log(moviesRXS);
 
   useEffect(() => {
     // Get up coming movies
@@ -20,11 +19,7 @@ const Banner: React.FC = () => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  return (
-    <div>
-      <h3>testing</h3>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Banner;

@@ -21,7 +21,6 @@ const getUpComingMoviesAXN = () => (
   // Loading true
   // dispatch(allActions.loadingActions.loadingToggleAXN(true))
 
-  console.log('running....');
   // Get language
   const language: string = store.getState().languageRXS;
 
